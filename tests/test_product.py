@@ -3,8 +3,6 @@ from selenium.webdriver.common.by import By
 from utils.driver_setup import DriverSetup
 from pages.base_page import BasePage
 
-#keen-slider__slide
-
 class TestProduct:
     @pytest.fixture(autouse=True)
     def setup(self):
