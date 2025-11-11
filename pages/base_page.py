@@ -9,6 +9,10 @@ class BasePage:
     def find_element(self, locator):
         return self.wait.until(EC.presence_of_element_located(locator))
     
+
+    def find_elements(self, locator):
+        return  self.wait.until(EC.presence_of_all_elements_located(locator))
+    
     def click(self, locator):
         element = self.find_element(locator)
         element.click()
@@ -24,3 +28,6 @@ class BasePage:
     
     def wait_for_url_contains(self, text):
             self.wait.until(EC.url_contains(text))
+
+    def find_visible_element(self, locator):
+        return self.wait.until(EC.visibility_of_element_located(locator))
