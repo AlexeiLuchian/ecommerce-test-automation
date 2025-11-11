@@ -68,7 +68,7 @@ class TestSearch:
         search_box = self.page.find_element(search_box_locator)
         placeholder = search_box.get_attribute("placeholder")
 
-        assert placeholder is not None
+        assert placeholder is not None  
         assert len(placeholder) > 0
         print(f"✓ Placeholder text: '{placeholder}'")
 

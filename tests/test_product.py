@@ -49,7 +49,7 @@ class TestProduct:
         accept_cookies = (By.ID, "CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll")
         
         self.page.click(accept_cookies)
-        title_first_word = self.page.find_element(title_locator).text.split()[0]
+        title_first_word = self.page.find_element(title_locator).text.strip().split()[0]
 
         assert title_first_word.lower() in self.driver.current_url.lower()
         print("✓ Product page load test passed!")
