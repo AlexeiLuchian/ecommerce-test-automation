@@ -7,7 +7,7 @@
 Automated testing suite for a Romanian e-commerce website (Dr.Max) using Selenium WebDriver and Pytest.
 
 ## Features
-- 10+ automated test cases covering:
+- 15+ automated test cases covering:
   - Search functionality
   - Product display
   - Navigation
